@@ -1,0 +1,43 @@
+.cf:before,
+.cf:after{
+	content:" ";
+	display:table;
+	
+	
+}
+.cf:after{
+	clear:both;
+	
+}
+.container{
+	max-width:940px;
+	padding:10px;
+	background:silver;
+	margin: 0 auto;
+	
+	
+	
+}
+
+.gallery{
+	width:100%;
+	
+	
+}
+.gallery-item{
+	
+	float:left;
+	background:white;
+	width:19%;
+	margin:1%;
+	padding:2%;
+	padding-bottom:5%;
+	box-shadow:1px 1px 3px black;
+	
+	
+}
+.gallery-item img{
+	
+	width:100%;
+	
+}

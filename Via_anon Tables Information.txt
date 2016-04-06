@@ -1,0 +1,20 @@
+
+
+//CREATE DATABASE NAMED => via_anon
+
+CREATE TABLE `mind_image` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `image_path` varchar(250), 
+  'audio_path' varchar(250), 
+  `mind` varchar(500),
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB;
+
+CREATE TABLE `usercomments` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+   `mind_image_pair_id` int(10) not null,
+  `comment` varchar(300) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB;
+
+ALTER TABLE `usercomments` ADD CONSTRAINT mind_image_pair_id_refs FOREIGN KEY (`mind_image_pair_id`) REFERENCES `mind_image_pair` (`id`);
